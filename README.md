@@ -30,7 +30,7 @@ Optional NAS companion service for NAS File Manager: server-side file operations
 ## 文档
 
 - [服务设计与权限边界](docs/design.md)：任务、回退、上传收尾、视频事件与部署原则。
-- [视频分享与稳定映射](docs/video-sharing.md)：固定链接、改名／换版、规则与人工管理、DDNS 地址配置。
+- [视频分享与稳定映射](docs/video-sharing.md)：固定链接、改名／换版、规则与人工管理、DDNS 地址配置，以及含倍速、长按加速和本地进度的 App 风格网页播放器。
 - [实施路线图与验证关卡](docs/roadmap.md)：分步交付、待冻结项、实际部署和验收安排。
 
 ## 独立维护

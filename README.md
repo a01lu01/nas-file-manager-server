@@ -15,7 +15,7 @@ Optional NAS companion service for NAS File Manager with server-side file operat
 | 受限上传收尾 | 提交本人预登记上传并清理本任务临时文件，独立授权 | 待实现，首批能力 |
 | 视频变化识别 | 目录事件为主、日志辅助、非必要不补查 | 待实现，可独立关闭 |
 | 文件与文件夹分享 | 整文件夹、多分段录像、图片和 Office 预览，视频稳定映射、三种观看方式及访客／账号统计 | 待实现，独立授权 |
-| API 中心 | 向自研 OA 提供文件列表、详情、HTTP 上传、下载、删除及应用授权与开发文档 | 待实现，2026-11-12 纳入计划 |
+| API 中心 | 向自研 OA 提供文件列表、详情、HTTP 上传、下载、删除，增加 NAS 账号相关管理、权限查询／修改，配套应用授权与开发文档 | 待实现，2026-11-12 纳入计划 |
 
 未部署服务时，App 继续使用原有 SMB／WebDAV 能力。相册模式和设备端视频压缩由 App 处理，不依赖本服务；NAS 上不存在原片时只登记实际上传的压缩成品。
 
@@ -34,7 +34,7 @@ Optional NAS companion service for NAS File Manager with server-side file operat
 - [视频分享与稳定映射](docs/video-sharing.md)：固定链接、改名／换版、规则与人工管理、DDNS 地址配置，含倍速、长按加速和本地进度的 App 风格网页播放器，以及 NAS 不转码的分享网络优化。
 - 整文件夹可通过一个链接浏览多分段录像、图片和 Office 文档，也支持图片及 Office 单文件分享。[文件夹与文档分享计划](docs/folder-and-document-sharing.md)
 - 分享支持完全免登录、免登录但需要登记、登录三种方式，并规划播放次数、有效时长、登记访客／账号完播进度与播放时间查询。[访问方式与观看统计计划](docs/video-analytics.md)
-- 为自研 OA 提供集成入口的 API 中心覆盖应用登记、目录授权、文件操作与调用记录。[API 中心计划](docs/api-center.md)
+- 为自研 OA 提供集成入口的 API 中心覆盖应用登记、目录授权、文件操作、NAS 账号创建／资料／状态／凭据／分组及权限查询／修改，管理操作单独委托并按实际后端声明能力。[API 中心计划](docs/api-center.md)
 - [实施路线图与验证关卡](docs/roadmap.md)：分步交付、待冻结项、实际部署和验收安排。
 
 ## 独立维护

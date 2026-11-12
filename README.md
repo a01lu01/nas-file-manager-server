@@ -1,6 +1,6 @@
 # NFM Server
 
-Optional NAS companion service for NAS File Manager: server-side file operations, upload finalization, and video sharing.
+Optional NAS companion service for NAS File Manager with server-side file operations, upload finalization, video sharing, and integration APIs.
 
 **NFM Server 是 NAS 文件管理器的可选配套服务，部署在用户自己的 NAS 或文件宿主上。当前处于设计阶段，仓库尚无可运行服务、正式镜像或部署命令。**
 
@@ -15,6 +15,7 @@ Optional NAS companion service for NAS File Manager: server-side file operations
 | 受限上传收尾 | 提交本人预登记上传并清理本任务临时文件，独立授权 | 待实现，首批能力 |
 | 视频变化识别 | 目录事件为主、日志辅助、非必要不补查 | 待实现，可独立关闭 |
 | 轻量视频分享 | 稳定视频 ID、版本映射、规则自动与服务端手动换版 | 待实现，独立授权 |
+| API 中心 | 向自研 OA 提供文件列表、详情、HTTP 上传、下载、删除及应用授权与开发文档 | 待实现，2026-11-12 纳入计划 |
 
 未部署服务时，App 继续使用原有 SMB／WebDAV 能力。相册模式和设备端视频压缩由 App 处理，不依赖本服务；NAS 上不存在原片时只登记实际上传的压缩成品。
 
@@ -31,6 +32,7 @@ Optional NAS companion service for NAS File Manager: server-side file operations
 
 - [服务设计与权限边界](docs/design.md)：任务、回退、上传收尾、视频事件与部署原则。
 - [视频分享与稳定映射](docs/video-sharing.md)：固定链接、改名／换版、规则与人工管理、DDNS 地址配置，含倍速、长按加速和本地进度的 App 风格网页播放器，以及 NAS 不转码的分享网络优化。
+- 为自研 OA 提供集成入口的 API 中心覆盖应用登记、目录授权、文件操作与调用记录。[API 中心计划](docs/api-center.md)
 - [实施路线图与验证关卡](docs/roadmap.md)：分步交付、待冻结项、实际部署和验收安排。
 
 ## 独立维护
